@@ -92,22 +92,22 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
-            <Button 
-              size="lg" 
-              className="hero-btn bg-gradient-neon text-primary-foreground hover:shadow-neon-strong transition-all duration-300 px-8 py-4 text-lg font-semibold group"
+             <a 
+              href="mailto:gueyemohamed287@gmail.com" 
+              className="hero-btn bg-gradient-neon text-primary-foreground hover:shadow-neon-strong transition-all duration-300 px-8 py-4 text-lg font-semibold group rounded-xl flex items-center"
             >
               <span>{t('hero.hire')}</span>
               <HiArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            </a>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 px-8 py-4 text-lg group"
-            >
-              <HiDownload className="mr-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
-              <span>{t('hero.download')}</span>
-            </Button>
+            <a 
+                href="public/download/moncv.pdf" 
+                download="moncv.pdf"
+                className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 px-8 py-4 text-lg group rounded-xl flex items-center"
+              >
+                <HiDownload className="mr-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
+                <span>{t('hero.download')}</span>
+              </a>
           </motion.div>
 
           {/* Scroll Indicator */}
