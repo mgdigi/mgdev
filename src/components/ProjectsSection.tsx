@@ -7,67 +7,67 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include real-time inventory, admin dashboard, and mobile-responsive design.",
-    image: "🛒",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-    demoUrl: "#",
-    codeUrl: "#",
+    title: "Cargo Management System",
+    description: "Web application for managing and tracking cargo shipments. Features include route planning for road and maritime transport, real-time map visualization with Leaflet, PDF document generation, and management of shippers and consignees.",
+    image: "/public/images/ges-cargo.png", 
+    technologies: ["TypeScript", "Leaflet", "OpenRouteService API", "HTML/CSS", "Json-server", "LocalStorage", "Vite", "Docker"],
+    demoUrl: "https://mgdigigp.onrender.com/",  
+    codeUrl: "#",  
     category: "Full Stack"
-  },
+},
   {
     id: 2,
-    title: "AI-Powered Analytics Dashboard",
-    description: "Data visualization platform with machine learning insights. Built with Next.js, Python backend, and integrated with multiple data sources.",
-    image: "📊",
-    technologies: ["Next.js", "Python", "TensorFlow", "D3.js", "PostgreSQL"],
-    demoUrl: "#",
-    codeUrl: "#",
-    category: "AI/ML"
-  },
-  {
-    id: 3,
-    title: "Social Media Mobile App",
-    description: "Cross-platform mobile application built with React Native. Features real-time messaging, photo sharing, and social networking capabilities.",
-    image: "📱",
-    technologies: ["React Native", "Firebase", "Redux", "Socket.io"],
-    demoUrl: "#",
-    codeUrl: "#",
-    category: "Mobile"
-  },
-  {
-    id: 4,
-    title: "Task Management System",
-    description: "Collaborative project management tool with real-time updates, team collaboration features, and advanced reporting capabilities.",
-    image: "✅",
-    technologies: ["Vue.js", "Express", "Socket.io", "MySQL", "Docker"],
-    demoUrl: "#",
-    codeUrl: "#",
-    category: "SaaS"
-  },
-  {
-    id: 5,
-    title: "Cryptocurrency Tracker",
-    description: "Real-time crypto tracking platform with portfolio management, price alerts, and market analysis tools.",
-    image: "₿",
-    technologies: ["React", "Chart.js", "WebSockets", "Redis", "Kubernetes"],
-    demoUrl: "#",
+    title: "Maxit-sa",
+    description: "Complete financial services platform, from modeling to deployment! with pur PHP .",
+    image: "/public/images/maxit-sa.jpeg",
+    technologies: ["PHP", "Typescript", "PostgresSQL", "MySql", "cloudinary", "Render", "Docker"],
+    demoUrl: "https://maxitsa-knvs.onrender.com/",
     codeUrl: "#",
     category: "FinTech"
   },
   {
-    id: 6,
-    title: "Learning Management System",
-    description: "Educational platform with video streaming, interactive quizzes, progress tracking, and certificate generation.",
-    image: "🎓",
-    technologies: ["Angular", "NestJS", "FFmpeg", "AWS S3", "ElasticSearch"],
-    demoUrl: "#",
+    id: 3,
+    title: "whatsapp clone App",
+    description: "complete application that replicates core WhatsApp functionalities, including real-time messaging, multimedia sharing, and push notifications.",
+    image: "/public/images/whatspp-clone.png",
+    technologies: ["Javascript", "Tailwind", "Superbase", "Socket.io", 'Vite', "Vercel", "Docker"],
+    demoUrl: "https://whatspp-clone-1x74o82ih-gueyes-projects.vercel.app/",
     codeUrl: "#",
-    category: "EdTech"
+    category: "Full Stack"
+  },
+  {
+    id: 4,
+    title: "Stock Flow",
+    description: "inventory project management tool with real-time updates, team collaboration features, and advanced reporting capabilities.",
+    image: "/public/images/prostock.png",
+    technologies: ["Typescript","chart.js",  "tailwind css","Vue.js", "Express", "Socket.io", "MongoDb", "Docker"],
+    demoUrl: "#",
+    codeUrl: "https://pro-stock-seven.vercel.app/",
+    category: "SaaS"
+  },
+  {
+    id: 5,
+    title: "Yaatou Market ",
+    description: "An e-commerce website built with WordPress and WooCommerce, specializing in selling household appliances, electronics, clothing, kitchenware, and home essentials. Designed with a modern, responsive layout and optimized for SEO and user experience. .",
+    image: "/public/images/yaatoumarket.png",
+    technologies: ["PHP", "Wordpress", "Elementor", "Woodmart", "Woocommerce", "OVHCLOUD", "Seo", "paytech"],
+    demoUrl: "#",
+    codeUrl: "https://yaatoumarket.sn/",
+    category: "CMS"
+  },
+  {
+    id: 6,
+    title: "Ets Madina Gounass",
+    description: "An e-commerce website built with WordPress and WooCommerce, specializing in selling household  electronics,  Designed with a modern, responsive layout and optimized for SEO and user experience. .",
+    image: "/public/images/ets.png",
+    technologies: ["PHP", "Wordpress", "Elementor", "Woodmart", "Woocommerce", "OVHCLOUD", "Seo", "paytech"],
+    demoUrl: "https://etsmadinagounass.com/",
+    codeUrl: "#",
+    category: "CMS"
   }
 ];
 
-const categories = ["All", "Full Stack", "AI/ML", "Mobile", "SaaS", "FinTech", "EdTech"];
+const categories = ["All", "Full Stack", "CMS", "SaaS", "FinTech"];
 
 export const ProjectsSection = () => {
   const ref = useRef(null);
@@ -89,7 +89,7 @@ export const ProjectsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins mb-6">
-            Featured <span className="text-gradient">Projects</span>
+            Latest <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
             A showcase of innovative solutions and cutting-edge applications
@@ -136,7 +136,7 @@ export const ProjectsSection = () => {
                 {/* Project Image/Icon */}
                 <div className="relative h-48 bg-gradient-dark flex items-center justify-center overflow-hidden">
                   <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {project.image}
+                    <img src={project.image} alt="" />
                   </div>
                   
                   {/* Overlay */}
@@ -147,27 +147,7 @@ export const ProjectsSection = () => {
                     }}
                     className="absolute inset-0 bg-primary/90 flex items-center justify-center space-x-4"
                   >
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="bg-white/20 hover:bg-white/30 text-white"
-                    >
-                      <HiEye className="h-5 w-5" />
-                    </Button>
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="bg-white/20 hover:bg-white/30 text-white"
-                    >
-                      <HiCode className="h-5 w-5" />
-                    </Button>
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="bg-white/20 hover:bg-white/30 text-white"
-                    >
-                      <HiExternalLink className="h-5 w-5" />
-                    </Button>
+                    
                   </motion.div>
                 </div>
 
@@ -203,18 +183,12 @@ export const ProjectsSection = () => {
                     <Button
                       size="sm"
                       className="flex-1 bg-primary/20 hover:bg-primary/30 text-primary border border-primary/30"
+                      onClick={() => window.open(project.demoUrl, "_blank")}
                     >
                       <HiEye className="mr-2 h-4 w-4" />
                       Demo
                     </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="flex-1 border-primary/30 text-text-secondary hover:border-primary hover:text-primary"
-                    >
-                      <HiCode className="mr-2 h-4 w-4" />
-                      Code
-                    </Button>
+                   
                   </div>
                 </div>
               </div>
