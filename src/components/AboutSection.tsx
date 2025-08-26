@@ -44,7 +44,7 @@ export const AboutSection = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-neon p-1 animate-glow-pulse">
                 <div className="w-full h-full rounded-full bg-dark-bg overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary-glow/20 flex items-center justify-center">
-                    <div className="text-6xl text-primary"><img src="/public/images/me.jpeg" alt="" /></div>
+                    <div className="text-6xl text-primary"><img src="/images/me.jpeg" alt="" /></div>
                   </div>
                 </div>
               </div>
