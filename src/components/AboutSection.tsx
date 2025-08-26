@@ -81,7 +81,7 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
-              {["React", "Node.js", "TypeScript", "Python", "AWS", "Docker"].map((tech, index) => (
+              {["React", "Node.js", "TypeScript", "PHP", "AWS", "Docker" , "Tailwind"].map((tech, index) => (
                 <motion.span
                   key={tech}
                   initial={{ opacity: 0, scale: 0 }}
